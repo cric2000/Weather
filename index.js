@@ -85,7 +85,7 @@ window.addEventListener('load',()=>{
                          let inputCity;
                          let units = "imperial";
                          inputCity = input.value;
-                         const apiCity = "http://api.openweathermap.org/data/2.5/weather?q="+inputCity+"&appid=af79f5179395082b2202446d6a3b9902&units="+units;
+                         const apiCity = "https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/weather?q="+inputCity+"&appid=af79f5179395082b2202446d6a3b9902&units="+units;
 
                          fetch(apiCity)
                          .then(dataCity=>{
