@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    letter-spacing: 3%;
+    text-transform: capitalize;
+   
+}
+.weather-message{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    font-size: 25px ;
+    line-height: 50px;
+    color: rgba(0,0,0,0.8);
+    font-family: 'Noto Serif', serif;
+    display: none;
+}
+
+.weather{
+    font-family: 'Nunito', sans-serif;
+    font-size: 72px;
+    letter-spacing: 6%;
+    font-weight: 600;
+    color:rgba(34, 49, 63, 0.9);
+}
+.text-container{
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.5);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10%;
+}
+.circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 630px;
+    width: 630px;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    font-size: 27px;
+    letter-spacing: 3%;
+    border-radius: 50%;
+    font-family: 'Nova Round', cursive;
+}
+.circle:hover{
+    box-shadow: 0 10px 20px 1px rgba(0,0,0,0.4);
+    background-color: rgba(255,255,255,0.1);
+    color: black;
+}
+.location-icon , .temp-unit{
+    display: flex;
+}
+.icon , .location{
+    margin: 0px 70px;
+}
+.location{
+     margin-top: 30px;
+}
+.temp-unit{
+    cursor: pointer;
+}
+.temp , .unit{
+    margin: 0px 3px;
+}
+.img-container{
+    background-image: url("sky.jpg");
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+}
+
+.input-button{
+    display:flex;
+    width: 100%;
+    padding: 20px;
+}
+ 
+.text{
+    font-family: 'Nova Round', cursive;
+    font-size: 22px;
+    font-weight: 100;
+    font-style: normal;
+    border-radius: 10px;
+    margin-left: 36%;
+    border: 0.5px solid;
+    outline: none;
+    color: rgba(0,0,0,0.8);
+    background-color: rgba(255,255,255,0.005);
+}
+.btn{
+    margin-left: 3%;
+    cursor: pointer;
+    font-family: 'Nova Round', cursive;
+    font-size: 25px;
+    padding:  7px 30px;
+    background-color: rgba(0,0,0,0.4);
+    border: 1px solid;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+}
+.btn:hover{
+    background-color: rgba(255,255,255,0.1);
+    color: black;
+}
+
+.footer{
+    font-family: 'Noto Serif', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: rgba(34, 49, 63, 0.9);
+}
+
+.footer span{
+    color:#a83f39 ;
+}
+
+.footer img{
+    height: 25px;
+    width: 25px;
+    margin-right: 55px;
+    opacity: 0.77;
+
+}
+
+.footer p{
+    margin-right: 7px;
+    font-size: 19px;
+}
+
+.footer img:hover{
+    opacity: 1;
+}
+.accounts{
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-start;
+   width: 80%;
+   position: absolute;
+   top: 4%;
+
+}
+.accounts img{
+    height: 28px;
+    width: 28px;
+    margin-left: 30px;
+    opacity: 0.7;
+}
+.accounts img:hover{
+    opacity: 1;
+}
+
+@media screen and (max-width:700px){
+    .accounts{
+        width: 95%;
+    }
+    .accounts img{
+        margin-left: 20px;
+    }
+    .circle{
+        height: 500px;
+        width: 500px;
+    }
+    .text{
+        margin-left: 10%;
+    }
+    .footer p{
+        margin-right: 10px;
+    }
+    .footer img{
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .circle{
+        height: 300px;
+        width: 300px;
+        font-size: 17px;
+    }
+    .weather{
+        font-size: 42px;
+    }
+    .icon , .location{
+        margin: 0px 20px;
+    }
+    .location{
+         margin-top: 40px;
+    }
+    .accounts{
+        width: 97%;
+    }
+    .accounts img{
+        margin-left: 10px;
+        height: 22px;
+        width: 22px;
+    }
+    .text{
+        margin-left: 1%;
+        font-size: 15px;
+    }
+    .btn{
+        font-size: 15px;
+    }
+    .footer p{
+        margin-right: 0px;
+        font-size: 14px;
+    }
+    .footer img{
+        margin-right: 0px;
+        height: 20px;
+        width: 20px;
+    }
+
+
+}
