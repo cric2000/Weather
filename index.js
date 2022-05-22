@@ -23,7 +23,7 @@ window.addEventListener('load',()=>{
                   lat = positonData.coords.latitude;
                   long = positonData.coords.longitude;
                   let unit="imperial";
-                  const webApi = ` http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=af79f5179395082b2202446d6a3b9902&units=`+unit ;
+                  const webApi = ` https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=af79f5179395082b2202446d6a3b9902&units=`+unit ;
                   fetch(webApi)
                   .then(data=>{
                       return data.json();
