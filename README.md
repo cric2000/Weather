@@ -4,7 +4,6 @@
 
 ## website using OpenWeather API
 
-### https://cric2000.github.io/Weather/
 
 
 ![Screenshot_2022-05-22_11-14-34](https://user-images.githubusercontent.com/56411192/169680759-2a38aef0-d0f2-4f11-a3b1-c60410fe50db.png)
